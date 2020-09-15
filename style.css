@@ -120,7 +120,7 @@
   background-color: #363636;
   width: 100%;
 
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .description p {
@@ -154,7 +154,6 @@
 
 .cards {
   width: 100%;
-  background-color: #ebebeb;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -604,6 +603,11 @@ body01 {
   color: #fff;
 }
 
+/*DESABILITA NAV*/
+.menu-nav {
+  display: none;
+}
+
 @media (max-width: 795px) {
   .menu ul {
     background-color: #e3783e;
@@ -646,5 +650,134 @@ body01 {
   .title {
     margin-top: 4rem;
     margin-bottom: 1rem;
+  }
+
+  /*===MENU NAV===*/
+
+  nav {
+    background: #222;
+    padding: 5px 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: #6b6363;
+  }
+
+  .menu-nav li a {
+    display: block;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  /*MOBILE*/
+
+  .menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle {
+    order: 1;
+  }
+
+  .item.button {
+    order: 2;
+  }
+
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+
+  .item.active {
+    display: block;
+  }
+
+  .toggle {
+    cursor: pointer;
+  }
+
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+
+  .bars::before,
+  .bars::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+  }
+
+  .bars::before {
+    top: 5px;
+  }
+
+  .bars::after {
+    top: -5px;
+  }
+
+  .menu-nav a img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .menu-nav .logo a img {
+    width: 5rem;
+    height: 2rem;
+    margin: 0;
+    border: 0;
+  }
+
+  @media all and (min-width: 468px) {
+    .menu-nav {
+      justify-content: center;
+    }
+
+    .logo {
+      flex: 1;
+    }
+
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+
+    .toggle {
+      order: 2;
+    }
+
+    .button.secondary {
+      border: 0;
+    }
+
+    .button a {
+      padding: 7px 15px;
+      border-radius: 50em;
+    }
   }
 }

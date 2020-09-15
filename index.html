@@ -8,14 +8,24 @@
     <title>Estro Studio</title>
   </head>
   <body>
+    <nav>
+      <ul class="menu-nav">
+        <li class="logo"><a href="#"><img src="./assets/Estro_branco_curva.png" alt="logo"></a></li>
+        <li class="item"><a href="#">Nossos serviços</a></li>
+        <li class="item"><a href="#">Projetos</a></li>
+        <li class="item"><a href="#">O espaço</a></li>
+        <li class="item"><a href="#">Entre em contato</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
     <header>
       <div class="navbar">
         <div class="menu">
           <ul>
-            <li><a href="#services">Nossos serviços</a></li>
-            <li>Projetos</li>
-            <li>O espaço</li>
-            <li>Entre em contato</li>
+            <li><a href="#services" class="nav-link js-scroll-trigger">Nossos serviços</a></li>
+            <li><a href="#projetos" class="nav-link js-scroll-trigger">Projetos</a></li>
+            <li><a href="#espaco" class="nav-link js-scroll-trigger">O espaço</a></li>
+            <li><a href="#contato" class="nav-link js-scroll-trigger">Entre em contato</a></li>
 
             <a
               href="https://www.instagram.com/estrostudios/?hl=pt-br"
@@ -60,7 +70,8 @@
     </header>
 
     <body>
-      <div id="services" class="title">
+      <div id="services" class="page-section bg-primary">
+      <div class="title">
         <h1>NOSSOS SERVIÇO</h1>
       </div>
       <div class="servicos-card">
@@ -118,8 +129,10 @@
       </div>
     </div>
     </div>
+  </div>
     </body>
     <footer>
+      <div id="projetos">
       <div class="title">
         <h1>PROJETOS</h1>
       </div>
@@ -141,9 +154,12 @@
       <div class="button">
         <button class="button">Veja o portfólio completo</button>
       </div>
+    </div>
     </footer>
 
     <aside>
+      <div id="espaco">
+      </div>
       <div class="title">
         <h1>O ESPAÇO</h1>
       </div>
@@ -171,9 +187,11 @@
           </div>
         </body01>
       </head01>
+    </div>
     </aside>
 
     <section>
+      <div id="contato">
       <div class="footer">
         <div class="conten-footer">
           <h1>ENTRE EM CONTATO</h1>
@@ -186,8 +204,20 @@
             
           </div>
       </div>
-      
+    </div>
     </section>
     <div class="fim">©2020 Estro Studio ❤</div>
-  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script defer src="./script.js"></script>
+
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</body>
 </html>
